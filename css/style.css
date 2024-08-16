@@ -17,11 +17,12 @@ img {
 body {
   font-family: "Barlow Semi Condensed";
   font-size: 0.813rem;
+  background-color: hsl(210, 46%, 95%);
 }
 
 .container {
-  width: 100%;
-  max-width: 98%;
+  width: 98%;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -32,7 +33,7 @@ body {
 }
 
 /* Media Query */
-@media (min-width: 50em) {
+@media (min-width: 50rem) {
   .main {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -50,9 +51,9 @@ body {
 
 /* Testimonials */
 .testimonial {
-  background-color: grey;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 0.8rem;
+  box-shadow: 4px 4px 12px hsla(0, 0%, 0%, 0.1);
 }
 
 .profile-container {
@@ -65,7 +66,6 @@ body {
 .profile-pic {
   border-radius: 50%;
   width: 40px;
-  /* remove border */
   border: 2px solid red;
 }
 
@@ -76,6 +76,7 @@ body {
 
 .profile-title {
   font-size: 0.8rem;
+  opacity: 50%;
 }
 
 .testimony-heading {
@@ -86,4 +87,35 @@ body {
 
 .testimony-body {
   margin-top: 1rem;
+  opacity: 75%;
+  line-height: 1.2rem;
+}
+
+.testimonial-1 {
+  background-image: url(/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: 85% 0;
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+
+.testimonial-2 {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+
+.testimonial-3 {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(219, 29%, 14%);
+}
+
+.testimonial-4 {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+}
+
+.testimonial-5 {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(219, 29%, 14%);
 }
