@@ -14,8 +14,76 @@ img {
 }
 
 /* General */
+body {
+  font-family: "Barlow Semi Condensed";
+  font-size: 0.813rem;
+}
+
 .container {
   width: 100%;
   max-width: 98%;
   margin: 0 auto;
+}
+
+.main {
+  margin-top: 10rem;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+/* Media Query */
+@media (min-width: 50em) {
+  .main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .testimonial-1,
+  .testimonial-4 {
+    grid-column: span 2;
+  }
+
+  .testimonial-5 {
+    grid-column-start: 4;
+    grid-row: 1 / 3;
+  }
+}
+
+/* Testimonials */
+.testimonial {
+  background-color: grey;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 40px;
+  /* remove border */
+  border: 2px solid red;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.profile-title {
+  font-size: 0.8rem;
+}
+
+.testimony-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.testimony-body {
+  margin-top: 1rem;
 }
